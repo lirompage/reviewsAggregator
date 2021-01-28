@@ -1,0 +1,114 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+}
+table {
+    font-size: 14px;
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+}
+th, td:first-child {
+    padding: 10px 20px;
+}
+th, td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+}
+tr {
+    background: #D8E6F3;
+}
+th:first-child, td:first-child {
+    text-align: left;
+}
+h1, h3 {
+    color: #4d6071;
+}
+.rating {
+    color: #60905c;
+}
+.small-img {
+    max-width: 100px;
+    height: 100px;
+}
+tbody tr:hover {
+    background:#AFCDE7;
+}
+.center-div {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.center {
+    text-align: center!important;
+}
+#time {
+    color: red;
+    font-size: 14px;
+}
+.button {
+    box-shadow: 0px 7px 8px -6px rgba(47, 87, 147, 0.4);
+    border: none;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 12px;
+    text-decoration: none;
+    background: #afcde7;
+    float: right;
+    margin: 10px 0px;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.button2 {
+    box-shadow: 0px 7px 8px -6px rgba(47, 87, 147, 0.4);
+    border: none;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 12px;
+    text-decoration: none;
+    background: #afcde7;
+    margin: 10px 0px;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.input_text {
+    border-radius: 5px;
+    width: 300px;
+    border: 2px solid #afcde7;
+    padding: 10px 10px;
+    margin: 5px 0px;
+    font-family: 'Poppins', sans-serif;
+}
+.button:hover, .button2:hover {
+    background:#92aabf;
+}
+form {
+    width: 312px;
+}
+.w50 {
+    width: 44%;
+    float: left;
+    padding: 3%;
+}
+img {
+    width: 100%;
+}
+select {
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    border: 2px solid #afcde7;
+    border-radius: 5px;
+}
+.sm-p {
+    font-size: 12px;
+    color: #8f9294;
+}
