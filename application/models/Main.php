@@ -18,11 +18,10 @@ class Main extends Model {
 	}
 
     public function getCountReviews($product) {
-	    $query = "SELECT COUNT(*) AS count
+        $count = $this->db->column("SELECT COUNT(*) AS count
                   FROM reviews 
-                  WHERE product_id_fk = '$product'";
-        $count = $this->db->row($query);
+                  WHERE product_id_fk = '$product'");
 
-        return $count[0]['count'];
+        return $count;
     }
 }
