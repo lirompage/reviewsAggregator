@@ -13,10 +13,10 @@ class ReviewsController extends Controller
 
     public function addNewReviewAction() {
         if(isset($_POST['submit'])) {
-            $productId = $_POST['product_id'];
-            $userName  = $_POST['user_name'];
-            $comment   = $_POST['comment'];
-            $rating    = $_POST['rating'];
+            $productId = htmlspecialchars($_POST['product_id']);
+            $userName  = htmlspecialchars($_POST['user_name']);
+            $comment   = htmlspecialchars($_POST['comment']);
+            $rating    = htmlspecialchars($_POST['rating']);
 
             if(empty($userName)) {
                 echo "Заполните поле: Имя пользователя";

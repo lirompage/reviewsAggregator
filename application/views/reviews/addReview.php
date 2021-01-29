@@ -1,7 +1,7 @@
 <div class="container">
     <h1>Оставить отзыв</h1>
         <form action="add-new-review" method="post" enctype="multipart/form-data">
-            <input class="input_text" type="text" placeholder="Имя пользователя" name="user_name"><br>
+            <input class="input_text" required type="text" placeholder="Имя пользователя" name="user_name"><br>
             <p class="sm-p">Оцените товар 1-10:</p>
             <select name="rating">
                 <option value="1">1</option>

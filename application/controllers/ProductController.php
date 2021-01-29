@@ -35,15 +35,17 @@ class ProductController extends Controller
     public function addNewProductAction() {
 
         if(isset($_POST['submit'])) {
-            $productName = $_POST['product_name'];
-            $userName    = $_POST['user_name'];
-            $price       = $_POST['price'];
+            $productName = htmlspecialchars($_POST['product_name']);
+            $userName    = htmlspecialchars($_POST['user_name']);
+            $price       = htmlspecialchars($_POST['price']);
             $imgArr = $_FILES['img'];
             $imgName = time() . $imgArr['name'];
             if(empty($productName)) {
                 echo "Заполните поля: Название товара";
             } elseif (empty($userName)) {
                 echo "Заполните поле: Имя пользователя";
+            } elseif (empty($price)) {
+                echo "Заполните поле: Цена товара";
             } elseif ($imgArr['type'] == 'image/jpeg'
                 || $imgArr['type'] == 'image/jpg'
                 || $imgArr['type'] == 'image/png'
