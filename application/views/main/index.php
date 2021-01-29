@@ -2,7 +2,8 @@
 
 use application\controllers\MainController;
 use application\helpers\SortHelper;
-SortHelper::sort();
+$sort = SortHelper::sort();
+
 ?>
 <div class="container">
     <h1>Каталог товаров</h1>
